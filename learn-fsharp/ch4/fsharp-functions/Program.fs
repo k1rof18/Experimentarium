@@ -15,3 +15,25 @@ let cardFace (card) =
   else string no
 
 printfn "%s" (cardFace 11)
+
+printfn "###########"
+printfn "コンポジション"
+printfn "###########"
+
+let multiply a b = a*b
+let multiply3 a = a * 3
+printfn "%i" (multiply3 2)
+
+let add9 a = a + 9
+let addAndMultiply = add9 >> multiply3
+printfn "%i" (addAndMultiply 1)
+
+printfn "###########"
+printfn "パイプライン"
+printfn "###########"
+
+let list  = [20;6;5]
+let sort (l: int list) = List.sort l
+let print (l: int list) = List.iter(fun x-> printfn "%i" x) l
+
+list |> sort |> print
