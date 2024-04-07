@@ -41,3 +41,27 @@ let hand = []
 let d, h = (cards, hand) |> drawCard |> drawCard
 
 printfn "Deck: %A Hand: %A" d h
+
+printfn "##########"
+printfn "map"
+printfn "##########"
+
+type Person = { FirstName: string; LastName: string }
+
+let people =
+    [ { FirstName = "Albert"
+        LastName = "Einstein" }
+      { FirstName = "Marie"
+        LastName = "Curie" } ]
+
+let nobelPrizeWinners =
+    List.map (fun person -> person.FirstName + person.LastName) people
+
+printfn "%A" nobelPrizeWinners
+
+printfn "##########"
+printfn "フィルター" // true に評価されると、要素は保持されます
+printfn "##########"
+
+let alberts = List.filter (fun person -> person.FirstName = "Albert") people
+printfn "%A" alberts
