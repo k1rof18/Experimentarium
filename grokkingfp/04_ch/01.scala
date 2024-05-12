@@ -21,3 +21,9 @@ def wordScores(words: List[String], wordScore: String => Int): List[Int] = {
   words.map(wordScore)
 }
 
+def isPlusNum(wordScore: Int) = wordScore > 0
+
+// highestWord(data, wordScore)
+def highestWord(words: List[String], wordScore: String => Int): List[String] = {
+  words.filter(w => isPlusNum(wordScore(w)))
+}
