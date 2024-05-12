@@ -10,7 +10,14 @@ def wordScore(word: String): Int = {
   return score(word) + bonus(word) - penalty(word)
 }
 
-// List(rust, haskell, java, scala, ada)
+val data = List("ada", "haskell", "scala", "java", "rust")
+// rankedWords(data, wordScore)
 def rankedWords(words: List[String], wordScore: String => Int): List[String] = {
   words.sortBy(wordScore).reverse
 }
+
+// wordScores(data, wordScore)
+def wordScores(words: List[String], wordScore: String => Int): List[Int] = {
+  words.map(wordScore)
+}
+

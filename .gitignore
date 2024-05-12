@@ -1,4 +1,7 @@
+.vscode
+
 target
 
+# scala
 .metals
 .scala-build
