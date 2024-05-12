@@ -1,4 +1,4 @@
-val data = List("scala", "rust", "ada")
+// val data = List("scala", "rust", "ada")
 
 // data.map(len)
 def len(x: String): Int = x.length
