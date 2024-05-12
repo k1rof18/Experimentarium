@@ -8,3 +8,6 @@
 
 # learn-fsharp
 [F# の最初のステップ](https://learn.microsoft.com/ja-jp/training/paths/fsharp-first-steps/)
+
+# tsKaigi
+登壇した時のスライド
