@@ -7,7 +7,12 @@ https://github.com/miciek/grokkingfp-examples
 ```sh
 sbt console
 
-:load './ch01/01_increment.scala'
+:load ./ch01/01_increment.scala
 
 increment(8)
+```
+
+テスト
+```
+sbt test
 ```
