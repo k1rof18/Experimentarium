@@ -19,8 +19,11 @@ def odd(x: Int) = x % 2 != 0
 def ov4(x: Int) = x > 4
 
 def largerThan(n: Int): Int => Boolean = i => i > n
-
 // nums.filter(largerThan(1))
 // nums.filter(largerThan(4))
 
 def fln(l: List[Int], len: Int => Boolean) = l.filter(len)
+
+def divBy(n: Int): Int => Boolean = i => i % n == 0
+// nums.filter(divBy(5))
+// nums.filter(divBy(2))
