@@ -9,6 +9,6 @@ def highScoreWords(words: List[String], wordScore: String => Int): Int => List[S
   higherThan => words.filter(w => wordScore(w) > higherThan)
 }
 
-val wordsWithScoreThan1: Int => List[String] = highScoreWords(words, wordScore)
+val wordsWithScoreThan1: Int => List[String] = highScoreWords(words, wordScores)
 
 // wordsWithScoreThan1(1))
