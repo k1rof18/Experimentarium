@@ -9,4 +9,7 @@ val books = List(
 def main() = {
   // List[String] = List(A, B, C)
   books.map(_.authors).flatten
+
+  // List[String] = List(A, B, C)
+  books.flatMap(_.authors)
 }
